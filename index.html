@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="scroll-restoration" content="manual">
     <title>DongShikai</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -43,7 +44,7 @@
                 </div>
 
             </div>
-            <div class="daohang">导航</div>
+            <a href="#tip"><div class="daohang">导航</div></a>
             <div class="daohang">导航</div>
             <div class="daohang">导航</div>
         </div>
@@ -53,10 +54,12 @@
     <div class="flex flex1 column ">
         <!-- 头部栏 -->
         <div class="white shadow flex" style="height: 70px;z-index:1;">
-            <div class="flex1">
-                <div id="playPauseButton"class="button"style="z-index: 1;">暂停</div>
+            <div class="flex1 flex" style="justify-content: center;">
+                <!--播放按钮-->
+                <div id="playPauseButton" class="button" style="z-index: 1;width: 100px;">暂停</div>
             </div>
-            <section class="loader">
+            <!--动态变化条-->
+            <section class="loader" id="bounce">
                 <div class="slider" style="--i:0">
                 </div>
                 <div class="slider" style="--i:1">
@@ -92,6 +95,7 @@
                 <!--列表区-->
                 <div class="column flex shadow">
                     <!--列表项-->
+                    <div id="tip"></div>
                     <div class="mgt8 white shadow" style="height: 180px;">
                         <div class="content">关于我</div>
                     </div>
@@ -115,8 +119,19 @@
             <!--右区-->
             <div class="flex column mgt8 ceBian" style="flex:1">
                 <!--提示区-->
-                <div class="flex white shadow" style="height: 160px;">
-
+                <div class="flex white shadow">
+                    <div class="card1 flex1">
+                        <div class="align1">
+                            <span class="red1"></span>
+                            <span class="yellow1"></span>
+                            <span class="green1"></span>
+                        </div>
+                        <h1>HOVER ME</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
+                            assumenda?
+                        </p>
+                    </div>
                 </div>
                 <!--消息区-->
                 <div class="flex white mgt8 shadow" style="height: 320px;">
