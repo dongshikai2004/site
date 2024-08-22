@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DongShikai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex">
+    <audio id="backgroundMusic" src="./music/bg.mp3" loop></audio>
+    <div id="confirmationOverlay">
+        <button class="button" id="confirmButton">
+            <p>button</p>
+        </button>
+    </div>
+    <!-- 侧栏 -->
+    <div class="white shadow ceBian" style="width: 300px;z-index: 2;">
+        <!--头像-->
+        <div class="flex" style="
+                padding: 10px;
+                justify-content:center;
+                align-items:center;
+                border-bottom: 1px solid #999;">
+            <img src="img/a.png" alt="头像" width="204px" height="120px">
+            <div style="margin-left: 10px;font-size:20px;">董石楷</div>
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="parent daohang">
+                <div class="card">
+                    <div class="content-box">
+                        <span class="card-title">3D Card</span>
+                        <p class="card-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                        <span class="see-more">点我</span>
+                    </div>
+                    <div class="date-box">
+                        <span class="month">JUNE</span>
+                        <span class="date">29</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+            <div class="daohang">导航</div>
+        </div>
+
+    </div>
+    <!-- 主栏 -->
+    <div class="flex flex1 column ">
+        <!-- 头部栏 -->
+        <div class="white shadow flex" style="height: 70px;z-index:1;">
+            <div class="flex1">
+                <div id="playPauseButton"class="button"style="z-index: 1;">暂停</div>
+            </div>
+            <section class="loader">
+                <div class="slider" style="--i:0">
+                </div>
+                <div class="slider" style="--i:1">
+                </div>
+                <div class="slider" style="--i:2">
+                </div>
+                <div class="slider" style="--i:3">
+                </div>
+                <div class="slider" style="--i:4">
+                </div>
+            </section>
+        </div>
+        <!--内容区-->
+        <div class="flex flex1" style="overflow: auto;">
+            <!--左区-->
+            <div class="flex column mg8 shadow" style="flex:3">
+                <!--数据区-->
+                <div class="flex neiRong">
+
+                    <div class="flex1 mgr8 white shadow shuju" style="height: 100px">
+
+                    </div>
+                    <div class="flex1 mgr8 white shadow shuju" style="height: 100px">
+
+                    </div>
+                    <div class="flex1 mgr8 white shadow shuju" style="height: 100px">
+
+                    </div>
+                    <div class="flex1 white shadow shuju" style="height: 100px">
+
+                    </div>
+                </div>
+                <!--列表区-->
+                <div class="column flex shadow">
+                    <!--列表项-->
+                    <div class="mgt8 white shadow" style="height: 180px;">
+                        <div class="content">关于我</div>
+                    </div>
+                    <div class="mgt8 white shadow" style="height: 180px;">
+
+                    </div>
+                    <div class="mgt8 white shadow" style="height: 180px;">
+
+                    </div>
+                    <div class="mgt8 white shadow" style="height: 180px;">
+
+                    </div>
+                    <div class="mgt8 white shadow" style="height: 180px;">
+
+                    </div>
+                    <div class="mgt8 white shadow" style="height: 180px;">
+
+                    </div>
+                </div>
+            </div>
+            <!--右区-->
+            <div class="flex column mgt8 ceBian" style="flex:1">
+                <!--提示区-->
+                <div class="flex white shadow" style="height: 160px;">
+
+                </div>
+                <!--消息区-->
+                <div class="flex white mgt8 shadow" style="height: 320px;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
