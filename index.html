@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="flex">
+<body class="flex" id="myInput">
     <audio id="backgroundMusic" src="./music/bg.mp3" loop></audio>
     <div id="confirmationOverlay">
-        <button class="button" id="confirmButton">
-            <p>button</p>
+        <button class="button" id="confirmButton" style="width: 100px;justify-content: center;">
+            <p>进入</p>
         </button>
     </div>
     <!-- 侧栏 -->
@@ -27,7 +27,7 @@
             <div style="margin-left: 10px;font-size:20px;">董石楷</div>
         </div>
         <!--导航栏-->
-        <div class="flex1">
+        <div class="flex1" >
             <div class="parent daohang">
                 <div class="card">
                     <div class="content-box">
@@ -56,7 +56,7 @@
         <div class="white shadow flex" style="height: 70px;z-index:1;">
             <div class="flex1 flex" style="justify-content: center;">
                 <!--播放按钮-->
-                <div id="playPauseButton" class="button" style="z-index: 1;width: 100px;">暂停</div>
+                <div id="playPauseButton" class="button" style="z-index: 1;width: 100px;justify-content: center;">暂停</div>
             </div>
             <!--动态变化条-->
             <section class="loader" id="bounce">
