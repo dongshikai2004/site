@@ -28,6 +28,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 处理确认按钮的点击事件
 });
-window.addEventListener('blur', function () {
-    document.getElementById('confirmationOverlay').style.visibility='visible';
-});
+// window.addEventListener('blur', function () {
+//     document.getElementById('confirmationOverlay').style.visibility='visible';
+// });
+
+// 获取当前时间
+var startTime = Date.now();
+const monthNames = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+// 更新时间显示
+function updateTime() {
+  var currentTime = Date.now();
+  var timeElapsed = currentTime - startTime;
+  var minutes = Math.floor(timeElapsed / 60000);
+  var seconds = ((timeElapsed % 60000) / 1000).toFixed(0);
+
+  // 如果秒数小于10，前面加0
+  seconds = (seconds < 10 ? '0' : '') + seconds;
+  document.querySelector('.month').textContent=monthNames[new Date().getMonth()];
+  document.querySelector('.date').textContent=new Date().getDay();
+  document.getElementById('timeSinceLoad').textContent = minutes + 'm ' + seconds + 's';
+}
+
+// 每秒更新时间
+setInterval(updateTime, 1000);
+
+// 页面加载完成后立即显示时间
+updateTime();

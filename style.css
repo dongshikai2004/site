@@ -263,12 +263,12 @@ body {
 
 .date-box .month {
     color: rgb(4, 193, 250);
-    font-size: 9px;
+    font-size: 13px;
     font-weight: 700;
 }
 
 .date-box .date {
-    font-size: 20px;
+    font-size: 33px;
     font-weight: 900;
     color: rgb(4, 193, 250);
 }
@@ -383,4 +383,81 @@ body {
     margin: 1.3rem;
     color: rgb(218, 244, 237);
     text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+
+button1 {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #149CEA;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    margin-left: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button1::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 3%;
+    width: 95%;
+    height: 5%;
+    background-color: rgb(29,140,249,0.5);
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+button1::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 100%;
+    left: 3%;
+    width: 95%;
+    height: 5%;
+    background-color: rgb(29,140,249,0.5);
+    transition: 0.5s;
+}
+
+button1:hover::before,
+button1:hover::after {
+    transform: scale(0)
+}
+
+button1:hover {
+    box-shadow: inset 0px 0px 25px rgb(19,120,249) ;
+}
+.hvr-icon-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    margin: .4em;
+    padding: 1em;
+    cursor: pointer;
+    background: #e1e1e1;
+    text-decoration: none;
+    color: #666;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 40px 0 0 0;
+    font-family: sans-serif;
+    color: #333;
+    line-height: 140%;
 }
